@@ -1,6 +1,5 @@
 import App from '../App.js';
 import React from 'react';
-import { render } from '@testing-library/react';
 import * as ReactDOM from 'react-dom';
 
 test('should render the heading', () => {

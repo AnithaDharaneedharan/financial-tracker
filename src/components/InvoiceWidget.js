@@ -78,7 +78,7 @@ export default function InvoiceWidget({localStorageData, invoices}) {
           ))}
         </tbody>
       </Table>
-      <Button data-testid="add-new-invoice" onClick={() => addNewInvoice({ referenceNumber: "new" })}>
+      <Button data-testid="add-new-invoice" onClick={() => addNewInvoice({ })}>
         Add New Invoice
       </Button>
     </div>

@@ -10,9 +10,6 @@ export default function InvoiceWidgetRow({ invoice, onRemove, onSaveEvent, trans
   const [creationDate, setCreationDate] = useState(dateFormatter(new Date()));
   const [amount, setAmount] = useState(0);
 
-  // const localStorageData = getData("data");
-  // const { transactionDetails } = localStorageData;
-
   useEffect(() => {
     setReferenceNumber(invoice.referenceNumber);
     setCustomerName(invoice.customerName);
@@ -38,6 +35,7 @@ export default function InvoiceWidgetRow({ invoice, onRemove, onSaveEvent, trans
       <td>
         <input
           type="text"
+          data-testid="reference-number"
           value={referenceNumber || ""}
           disabled={paymentStatus === "PAID"}
           onChange={(e) => setReferenceNumber(e.target.value)}
@@ -46,6 +44,7 @@ export default function InvoiceWidgetRow({ invoice, onRemove, onSaveEvent, trans
       <td>
         <input
           type="text"
+          data-testid="customer-name"
           value={customerName}
           disabled={paymentStatus === "PAID"}
           onChange={(e) => setCustomerName(e.target.value)}
@@ -54,6 +53,7 @@ export default function InvoiceWidgetRow({ invoice, onRemove, onSaveEvent, trans
       <td>
         <input
           type="text"
+          data-testid="creation-date"
           value={creationDate}
           disabled={paymentStatus === "PAID"}
           onChange={(e) => setCreationDate(e.target.value)}
@@ -62,7 +62,8 @@ export default function InvoiceWidgetRow({ invoice, onRemove, onSaveEvent, trans
 
       <td>
         <input
-          type="text"
+          type="number"
+          data-testid="amount"
           value={amount}
           disabled={paymentStatus === "PAID"}
           onChange={(e) => setAmount(e.target.value)}
