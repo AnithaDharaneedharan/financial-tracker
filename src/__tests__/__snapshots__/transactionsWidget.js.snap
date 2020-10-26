@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="heading"
+  >
+    Transaction Details
+    <table
+      class="table table-dark table-striped table-bordered table-hover"
+    >
+      <thead>
+        <tr>
+          <th>
+            Date of Transaction
+          </th>
+          <th>
+            Transaction Description
+          </th>
+          <th>
+            Transaction Reference number
+          </th>
+          <th>
+            Amount
+          </th>
+        </tr>
+        <tr>
+          <td>
+            2020-08-01
+          </td>
+          <td>
+            House Rent
+          </td>
+          <td>
+            ANI123
+          </td>
+          <td>
+            <span
+              class="debit"
+            >
+              <span
+                class="amount-prefix"
+              >
+                -£1000.
+              </span>
+              <span
+                class="amount-suffix"
+              >
+                89
+              </span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2020-08-08
+          </td>
+          <td>
+            Receivable Invoice from NEXT
+          </td>
+          <td>
+            NEXT123
+          </td>
+          <td>
+            <span
+              class="credit"
+            >
+              <span
+                class="amount-prefix"
+              >
+                +£6000.
+              </span>
+              <span
+                class="amount-suffix"
+              >
+                00
+              </span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2020-08-08
+          </td>
+          <td>
+            Receivable Invoice from Waitrose
+          </td>
+          <td>
+            WAITROSE123
+          </td>
+          <td>
+            <span
+              class="credit"
+            >
+              <span
+                class="amount-prefix"
+              >
+                +£10.
+              </span>
+              <span
+                class="amount-suffix"
+              >
+                00
+              </span>
+            </span>
+          </td>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,52 @@
+{
+    "customer_id": "5000",
+    "invoices": [
+        {
+            "invoice_id": "2",
+            "details": {
+                "product_id": "2A",
+                "quantity": 1,
+                "amount": 6000
+            },
+            "reference_no": "CAZOO",
+            "creation_date": "2020-10-01",
+            "due_date": "2020-10-30",
+            "amount": 6000,
+            "type": "Payable",
+            "payment_status": "NOT PAID",
+        },
+        {
+            "invoice_id": "1",
+            "details": {
+                "product_id": "1A",
+                "quantity": 2,
+                "amount": 500
+            },
+            "reference_no": "WHITBREAD",
+            "creation_date": "2020-09-01",
+            "due_date": "2020-09-30",
+            "amount": 1000,
+            "type": "Receivable",
+            "payment_status": "PAID",
+            "receiverAccountNumber": "ABC",
+            "receiverSortCode": "1224"
+        },
+        {
+            "invoice_id": "2",
+            "invoiceDetails": {
+                "product_id": "2B",
+                "productDetails": {
+
+                },
+                "quantity": 2,
+                "amount": 100
+            },
+            "reference_no": "TCS",
+            "creation_date": "2017-09-01",
+            "due_date": "2017-09-30",
+            "amount": 200,
+            "type": "Payable",
+            "payment_status": "PAID"
+        }
+    ]
+}

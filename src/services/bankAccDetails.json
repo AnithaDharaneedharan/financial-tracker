@@ -1,0 +1,90 @@
+{
+    "customerId": "anitha123",
+    "firstName": "ANI",
+    "lastName": "THA",
+    "address": "557 Clinton Ave, Newark, NJ 07108, USA",
+    "city": "Newark",
+    "country": "United States",
+    "emailId": "ani@gmail.com",
+    "postcode": "NJ 07108",
+    "telephone": "+1 973-396-2963",
+    "bankBalance": 10000,
+    "thresholdAmount": 1000,
+    "transactionDetails": [
+        {
+            "date": "2020-08-01",
+            "description": "House Rent",
+            "referenceNumber": "ANI123",
+            "amount": -1000.89,
+            "type": "D"
+        },
+        {
+            "date": "2020-08-08",
+            "description": "Receivable Invoice from NEXT",
+            "referenceNumber": "NEXT123",
+            "amount": 6000,
+            "type": "C"
+        },
+        {
+            "date": "2020-08-08",
+            "description": "Receivable Invoice from Waitrose",
+            "referenceNumber": "WAITROSE123",
+            "amount": 10,
+            "type": "C"
+        }
+    ],
+    "invoices": [
+        {
+            "referenceNumber": "NEXT123",
+            "customerName": "NEXT",
+            "billingAddress": "TW12 1RD, LONDON",
+            "creationDate": "2020-08-05",
+            "dueDate": "2020-08-28",
+            "amount": 6000,
+            "customerAccountNumber": "3447698y5",
+            "customerSortCode": "1234",
+            "invoiceDetails": [
+                {
+                    "product": "shirt",
+                    "productId": "yello-shirt-123",
+                    "productCategory": "garment",
+                    "quantity": 2,
+                    "rate": 25,
+                    "amount": 20,
+                    "VAT": 4,
+                    "total": 24
+                },
+                {
+                    "product": "dress",
+                    "productId": "red-dress-123",
+                    "productCategory": "garment",
+                    "quantity": 1,
+                    "rate": 50,
+                    "amount": 50,
+                    "VAT": 10,
+                    "total": 60
+                }
+            ]
+        },
+        {
+            "referenceNumber": "WAITROSE123",
+            "customerName": "WAITROSE",
+            "billingAddress": "RG12 1RD, LONDON",
+            "creationDate": "2020-08-08",
+            "dueDate": "2020-09-08",
+            "amount": 600,
+            "customerAccountNumber": "",
+            "customerSortCode": ""
+        },
+        {
+            "referenceNumber": "UBER123",
+            "customerName": "UBER",
+            "billingAddress": "SM6 1RD, LONDON",
+            "creationDate": "2020-08-08",
+            "dueDate": "2020-09-08",
+            "amount": -40,
+            "customerAccountNumber": "34476ERT5",
+            "customerSortCode": "9876"
+        }
+    ]
+}

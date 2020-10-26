@@ -1,0 +1,32 @@
+{"allTransactions": [
+    {
+        "transaction_id" : "100",
+        "customer_id": "5000",
+        "customer_name": "ANITHA",
+        "reference_no": "NEXT1",
+        "transaction_date": "2020-09-09",
+        "transaction_desc": "garments",
+        "amount": 500,
+        "type" : "D"
+    },
+    {
+        "transaction_id" : "101",
+        "customer_id": "5001",
+        "customer_name": "SIVA",
+        "reference_no": "SAINSBURY123",
+        "transaction_date": "2020-09-08",
+        "transaction_desc": "dress",
+        "amount": 100,
+        "type" : "D"
+    },
+    {
+        "transaction_id" : "102",
+        "customer_id": "5000",
+        "customer_name": "ANITHA",
+        "reference_no": "WAITROSE133",
+        "transaction_date": "2020-09-07",
+        "transaction_desc": "groceries",
+        "amount": 300,
+        "type" : "D"
+    }
+]}

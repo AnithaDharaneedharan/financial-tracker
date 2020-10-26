@@ -1,0 +1,26 @@
+GET http://www.api-financeTracker/transactions/:customer_Id ->  transactions.json -> Transaction DB
+GET http://www.api-financeTracker/customers/:customer_Id-> customers.json -> Customer Information DB
+
+GET http://www.api-financeTracker/allTransactions -> GET all the transactions from DB
+GET http://www.api-financeTracker/transactions/:transaction_Id -> gets details of the specific transaction
+
+GET http://www.api-financeTracker/customers/-> Gets all the customers of the bank from the DB 
+GET http://www.api-financeTracker/customers/:customer_id-> Gets the specific customer of the bank from the DB 
+
+Do I need to include the customer info(address) on the transactions?
+Do I need to include the customer transaction details on the customer id ? if separate , how to design APIs?
+
+
+GET http://www.api-financeTracker/invoices/:customer_Id -> get the invoices of a specific customer
+GET http://www.api-financeTracker/invoices/:invoice_Id -> get the invoice details of a specific invoice
+
+how to differentiate between the IDs of the above 2 APIs ?
+do I need only the receivable customer details or even payable?
+why do i need the receiver's customer id in the customer info table?
+
+product details inside the invoice?? 
+
+     // const removeIndex = data.findIndex(
+    //   (invoice) => invoice.referenceNumber === invoiceObj.referenceNumber
+    // );
+    // data.splice(removeIndex, 1);

@@ -1,0 +1,44 @@
+{
+    "customers": [
+        {
+            "customer_id": "5000",
+            "customer_name": "ANITHA",
+            "addressDetails": {
+                "address_line1": "8, Milton road",
+                "address_line2": "Wallington",
+                "postCode": "TW12 1RD",
+                "country": "UK",
+                "phone": 4578004
+            },
+            "individualTransactions": [
+                {
+                    "transaction_id": "100",
+                    "reference_no": "NEXT1",
+                    "transaction_date": "2020-09-09",
+                    "transaction_desc": "garments",
+                    "amount": 500,
+                    "type": "D"
+                },
+                {
+                    "transaction_id": "102",
+                    "reference_no": "WAITROSE133",
+                    "transaction_date": "2020-09-07",
+                    "transaction_desc": "groceries",
+                    "amount": 300,
+                    "type": "D"
+                }
+            ]
+        },
+        {
+            "customer_id": "5001",
+            "customer_name": "SIVA",
+            "addressDetails": {
+                "address_line1": "68, Milton road",
+                "address_line2": "Wallington",
+                "postCode": "TW89 1RD",
+                "country": "UK",
+                "phone": 908004
+            }
+        }
+    ]
+}
