@@ -22,7 +22,10 @@ cd financial-tracker
 npm run start
 ```
 ```
-3 widgets would appear - Transactional Widget which shows the list of transactions, Financial Widget which shows the bank balance 
+3 widgets would appear -
+Transactional Widget which shows the list of transactions.
+Invoice Widget where you can add a new invoice , Update an existing invoice and remove an invoice.
+Financial Widget which shows the bank balance and the financial status
 ```
 
 
