@@ -1,7 +1,6 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 import TransactionWidgetRow from "./TransactionWidgetRow.js";
-import { getData } from "../services/localData";
 
 export default function TransactionsWidget({ transactionDetails }) {
   return (

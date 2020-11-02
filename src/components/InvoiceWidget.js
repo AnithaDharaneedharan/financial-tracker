@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import InvoiceWidgetRow from "../components/InvoiceWidgetRow";
-import { setData } from '../services/localData'
+import { setData } from "../services/localData";
 import { Table, Button } from "react-bootstrap";
 
-export default function InvoiceWidget({localStorageData, invoices}) {
-  
+export default function InvoiceWidget({ localStorageData, invoices }) {
   const [invoiceState, setInvoice] = useState(invoices);
 
   const addNewInvoice = (newInvoice) => {
@@ -14,22 +13,23 @@ export default function InvoiceWidget({localStorageData, invoices}) {
   const updateInvoice = (invoiceObj) => {
     const data = invoiceState;
     let alreadyInWidget = false;
-
     data.forEach((invoice) => {
       if (invoice.referenceNumber === invoiceObj.referenceNumber) {
         alreadyInWidget = true;
       }
     });
+
     if (!alreadyInWidget) {
-      const localInvoice = [...localStorageData.invoices];
-      localInvoice.push(invoiceObj);
-      setData("data", {
-        ...localStorageData,
-        invoices: localInvoice,
-      });
-      setInvoice([...invoiceState, invoiceObj]);
-      return;
+        const localInvoice = [...localStorageData.invoices];
+        localInvoice.push(invoiceObj);
+        setData("data", {
+          ...localStorageData,
+          invoices: localInvoice,
+        });
+        setInvoice([...invoiceState, invoiceObj]);
+        return;
     }
+
     const existingInvoices = [...invoiceState];
     const updatedIndex = existingInvoices.findIndex(
       (existingInvoice) =>
@@ -46,8 +46,6 @@ export default function InvoiceWidget({localStorageData, invoices}) {
     const newData = data.filter(
       (invoice) => invoice.referenceNumber !== invoiceObj.referenceNumber
     );
-
-
     setData("data", { ...localStorageData, ...{ invoices: newData } });
     setInvoice(newData);
   };
@@ -78,7 +76,7 @@ export default function InvoiceWidget({localStorageData, invoices}) {
           ))}
         </tbody>
       </Table>
-      <Button data-testid="add-new-invoice" onClick={() => addNewInvoice({ })}>
+      <Button data-testid="add-new-invoice" onClick={() => addNewInvoice({referenceNumber: 'new'})}>
         Add New Invoice
       </Button>
     </div>

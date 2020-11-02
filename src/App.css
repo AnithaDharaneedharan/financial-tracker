@@ -4,38 +4,6 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
-/* .App-header {
-  background-color: #282c34;
-  min-height: 10vh;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-}
-
-.grid-invoice {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.grid > span  {
-  padding: 8px 4px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
 .heading {
   margin-top: 40px;
   width: 100%;
@@ -55,7 +23,6 @@
 
 .status {
   font-size: larger;
-  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .action {
@@ -82,9 +49,3 @@
   font-weight: bolder;
  
 }
-
-/* .btn {
-  flex: 1;
-  border-radius: 12px;
-  font-size: medium;
-} */
